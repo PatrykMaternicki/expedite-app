@@ -16,6 +16,6 @@ export const MixinsFormatDate = {
       };
 
       return date.toLocaleDateString('en-US', options);
-    }
+    },
   },
 };

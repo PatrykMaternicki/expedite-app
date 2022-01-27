@@ -86,6 +86,7 @@ module.exports = {
     "no-restricted-globals": "off",
     "no-restricted-properties": "off",
     "no-bitwise": "off",
+    "no-tabs": "off",
     "no-template-curly-in-string": "off"
   },
 };
