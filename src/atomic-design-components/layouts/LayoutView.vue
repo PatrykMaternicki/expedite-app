@@ -7,7 +7,9 @@
       :bold-text="boldText"
       :card-text="cardText"
     />
-    <v-main>
+    <v-main
+      class="pa-0"
+    >
       <slot />
     </v-main>
   </v-app>
