@@ -3,11 +3,12 @@
 </template>
 <script>
 import templatesForecastOverview from '@/atomic-design-components/templates/forecast/Overview';
+
 export default {
   name: 'App',
 
   components: {
-    templatesForecastOverview
+    templatesForecastOverview,
   },
 
   data: () => ({

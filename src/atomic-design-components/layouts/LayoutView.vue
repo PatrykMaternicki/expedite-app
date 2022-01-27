@@ -2,10 +2,10 @@
   <v-app
     class="layoutsLayoutView"
   >
-    <molecules-navigation-appbar 
-      :title="title"
+    <molecules-navigation-appbar
       :bold-text="boldText"
       :card-text="cardText"
+      :title="title"
     />
     <v-main
       class="pa-0"
@@ -18,29 +18,29 @@
 import moleculesNavigationAppbar from '@/atomic-design-components/molecules/navigation/Appbar';
 
 export default {
-  name: 'layoutsLayoutView',
+  name: 'LayoutsLayoutView',
 
   components: {
-    moleculesNavigationAppbar
+    moleculesNavigationAppbar,
   },
 
   props: {
     title: {
       type: String,
-      default: undefined
+      default: undefined,
     },
 
     boldText: {
       type: String,
-      default: undefined
+      default: undefined,
     },
 
     cardText: {
       type: String,
-      default: undefined
-    }
-  }
-}
+      default: undefined,
+    },
+  },
+};
 </script>
 <style lang="scss">
   $class-name: 'layoutsLayoutView';

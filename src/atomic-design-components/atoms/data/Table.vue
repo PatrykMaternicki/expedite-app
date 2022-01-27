@@ -1,30 +1,30 @@
 <template>
   <div class="atomsDataTable">
     <v-data-table
+      class="elevation-1"
       :headers="headers"
       :items="items"
       :items-per-page="5"
       :width="2400"
-      class="elevation-1"
     />
   </div>
 </template>
 <script>
 export default {
-  name: 'atomsDataTable',
+  name: 'AtomsDataTable',
 
   props: {
     items: {
       type: Array,
-      default: () => []
+      default: () => [],
     },
 
     headers: {
       type: Array,
-      default: () => []
-    }
-  }
-}
+      default: () => [],
+    },
+  },
+};
 </script>
 <style lang="scss">
   $class-name: 'atomsDataTable';
@@ -35,9 +35,11 @@ export default {
       border-bottom-width: 4px !important;
     }
 
-    table {
-      min-width: 100%;
-      width: 1600px;
+    @media all and (min-width: 1024px) {
+      table {
+        min-width: 100%;
+        width: 1600px !important
+      }
     }
 
     tr td:first-child {

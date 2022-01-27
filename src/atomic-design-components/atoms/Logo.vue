@@ -1,18 +1,18 @@
 <template>
   <img
     :src="source"
-  />
+  >
 </template>
 <script>
 export default {
-  name: 'atomsLogo',
+  name: 'AtomsLogo',
 
   data() {
     return {
-      source: require('@/assets/expedite_ico_web.svg')
-    }
-  }
-}
+      source: require('@/assets/expedite_ico_web.svg'),
+    };
+  },
+};
 </script>
 <style scoped>
   .atomsButtonsIcon {

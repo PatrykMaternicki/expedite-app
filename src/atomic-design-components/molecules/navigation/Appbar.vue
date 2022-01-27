@@ -2,60 +2,67 @@
   <div
     class="moleculesNavigationAppbar"
   >
-  <v-app-bar
-    app
-    color="#0a0a0a"
-    class="moleculesNavigationAppbar"
-    dark
-  >
-    <atoms-buttons-icon 
-      icon="arrow-left"
-    />
-    <div class="pl-4 d-flex">
-      <atoms-logo />
+    <v-app-bar
+      app
+      class="moleculesNavigationAppbar"
+      color="#0a0a0a"
+      dark
+    >
+      <atoms-buttons-icon
+        icon="arrow-left"
+      />
+      <div class="pl-4 d-flex">
+        <atoms-logo />
+      </div>
+      <div class="pl-4 d-flex">
+        <p
+          v-if="title"
+          class="mb-0 moleculesNavigationAppbar__paragraph"
+        >
+          {{ title }}
+          <span class="pl-4 moleculesNavigationAppbar__paragraph--bold">
+            {{ boldText }}
+          </span>
+        </p>
+      </div>
+    </v-app-bar>
+    <div
+      v-if="cardText"
+      class="moleculesNavigationAppbar__bottom"
+    >
+      {{ cardText }}
     </div>
-    <div class="pl-4 d-flex">
-      <p v-if="title" class="mb-0 moleculesNavigationAppbar__paragraph">
-        {{ title }}
-        <span class="pl-4 moleculesNavigationAppbar__paragraph--bold">
-          {{ boldText }}
-        </span>
-      </p>
-    </div>
-  </v-app-bar>
-  <div v-if="cardText" class="moleculesNavigationAppbar__bottom">
-    {{ cardText }}
-  </div>
   </div>
 </template>
 <script>
 import AtomsButtonsIcon from '@/atomic-design-components/atoms/buttons/Icon';
 import AtomsLogo from '@/atomic-design-components/atoms/Logo';
+
 export default {
-  name: 'moleculesNavigationAppbar',
+  name: 'MoleculesNavigationAppbar',
 
   components: {
     AtomsButtonsIcon,
-    AtomsLogo
+    AtomsLogo,
   },
 
   props: {
     title: {
       type: String,
-      default: undefined
+      default: undefined,
     },
 
     boldText: {
       type: String,
-      default: undefined
+      default: undefined,
     },
 
     cardText: {
       type: String,
-      default: undefined
-    }
-  }
-}
+      default: undefined,
+    },
+  },
+};
 </script>
 <style lang="scss">
   $class-name: 'moleculesNavigationAppbar';

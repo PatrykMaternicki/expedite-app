@@ -6,7 +6,7 @@ export const MixinsFormatCurrency = {
         currency: 'USD',
       });
 
-      return formatter.format(value)
-    }
-  }
-}
+      return formatter.format(value);
+    },
+  },
+};

@@ -1,31 +1,32 @@
 <template>
-<div>
+  <div>
     <layouts-layout-view
-      title="Forecasting"
       bold-text="Opportunity Name"
       card-text="Forecast Name"
+      title="Forecasting"
     >
-      <organisms-forecast-table 
+      <organisms-forecast-table
         :data="data"
       />
     </layouts-layout-view>
-  </div> 
+  </div>
 </template>
 <script>
 import layoutsLayoutView from '@/atomic-design-components/layouts/LayoutView';
 import organismsForecastTable from '@/atomic-design-components/organisms/forecast/Table';
 import fakeData from '@/assets/fake-data';
+
 export default {
-  name: 'templatesForecastOverview',
+  name: 'TemplatesForecastOverview',
   components: {
     layoutsLayoutView,
-    organismsForecastTable
+    organismsForecastTable,
   },
 
   data() {
     return {
-      data: fakeData
-    }
-  }
-}
+      data: fakeData,
+    };
+  },
+};
 </script>

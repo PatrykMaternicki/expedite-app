@@ -4,24 +4,24 @@
     color="#0a0a0a"
   >
     <v-icon
-      large
       color="#acacac"
+      large
     >
-      mdi-{{icon}}
+      mdi-{{ icon }}
     </v-icon>
   </v-btn>
 </template>
 <script>
 export default {
-  name: 'atomsButtonsIcon',
+  name: 'AtomsButtonsIcon',
 
   props: {
     icon: {
       type: String,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
 <style scoped>
   .atomsButtonsIcon {
